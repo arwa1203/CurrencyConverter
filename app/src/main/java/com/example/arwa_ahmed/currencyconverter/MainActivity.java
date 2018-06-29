@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
                     EditText amount2 = (EditText) findViewById(R.id.amount2);
                     Double secondAmountDb= firstAmountDb * 0.6;
-
                     amount2.setText(secondAmountDb.toString());
 
 
