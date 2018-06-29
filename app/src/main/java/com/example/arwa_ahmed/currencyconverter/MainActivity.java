@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 boolean handled = false;
-                if (actionId == EditorInfo.IME_ACTION_SEND) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
                     Double firstAmountDb = Double.parseDouble(amount1.getText().toString());
 
                     EditText amount2 = (EditText) findViewById(R.id.amount2);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     handled = true;
-                    setContentView(R.layout.activty_main);
+
                 }
                 return handled;
             }
